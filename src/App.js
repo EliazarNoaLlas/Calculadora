@@ -1,14 +1,21 @@
+// Importamos el logotipo de React y los estilos del archivo "App.css".
 import logo from './logo.svg';
 import './App.css';
 
+// Definimos el componente funcional "App".
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <header>
+        {/* Mostramos el logotipo de React */}
+        <img src={logo} alt="logo" />
+        
+        {/* Mostramos un texto con instrucciones */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        
+        {/* Agregamos un enlace para aprender sobre React */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,4 +29,5 @@ function App() {
   );
 }
 
+// Exportamos el componente "App" para poder utilizarlo en otros archivos.
 export default App;
